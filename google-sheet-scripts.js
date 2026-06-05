@@ -11,12 +11,15 @@ function MIRROR() {
   var source = ss.getSheetByName(SHEET_A_TAB_A);
   var destination = ss.getSheetByName(SHEET_A_TAB_B);
 
-  // Get all data from source tab
-  var data = source.getDataRange().getValues();
+  // Get only columns A-F from the source tab
+  var numRows = source.getLastRow();
+  var numCols = 6;
+  if (numRows === 0) return;
+  var data = source.getRange(1, 1, numRows, numCols).getValues();
 
-  // Clear destination tab first
-  destination.clearContents();
+  // Clear only columns A-F in the destination tab
+  destination.getRange(1, 1, numRows, numCols).clearContent();
 
-  // Copy data to destination tab
-  destination.getRange(1, 1, data.length, data[0].length).setValues(data);
+  // Copy data into destination tab A-F only
+  destination.getRange(1, 1, numRows, numCols).setValues(data);
 }
