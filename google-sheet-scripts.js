@@ -2,8 +2,8 @@
 var SHEET_A = "1KHXqh8eXYKF4dWPY51Z7p7N1X60MaHkTNHKmT2TIgRo"; // Sheet: "All_Information"
 
 // ===== TAB NAMES =====
-var SHEET_A_TAB_A = "LiveBooking_Import"; // Sheet: "All_Information" >> Tab: "LiveBooking_Import"
-var SHEET_A_TAB_B = "LiveBooking_Import_Mirror"; // Sheet: "All_Information" >> Tab: "LiveBooking_Import_Mirror"
+var SHEET_A_TAB_A = "LiveBooking_IMPORT"; // Sheet: "All_Information" >> Tab: "LiveBooking_IMPORT"
+var SHEET_A_TAB_B = "LiveBooking_Import_MIRROR"; // Sheet: "All_Information" >> Tab: "LiveBooking_Import_MIRROR"
 
 // ===== FUNCTIONS =====
 function MIRROR() {
